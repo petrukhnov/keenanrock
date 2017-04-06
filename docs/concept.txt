@@ -1,0 +1,44 @@
+
+
+
+The Problem
+Communication is essential part of every organisation. R&D could be more efficient with better tools. Various organisations may not willing to have central authority/site, to store conversations and user data.
+
+
+Example
+Finland have several universities. Each university maintain own users and content. If user from one org want to communicated with user from another org, he need to have account in other system.
+Organisations amy not willing to grant access to everyone.
+What if we don't limit to Finland but include other EU countries, or even asia? It will become more complicated, as each country have own laws about storing user data.
+
+Solution
+Distributed platform will allow organizations or their parts to communicate real time (chat) and work on specific models/objects in same context.
+
+If each university have their own independent system, and way to connect ot other organisations in controlled way, problem could be resolved.
+
+
+Same applied for e.g. political parties, or even big international enterprises.
+
+
+Another example
+
+There are 3 sites: Helsinki, Toronto and Tokyo. Each have own installation of system. For simplicity lets assume that each system provide chat, issue tracking(like jira) and search.
+Each site host all services and own data. E.g. If person in Helsinki create new issue or chat channel, it will be only stored on Helsinki site. Helsiinki ops will take care of mainenance, and scaling.
+People from Toronto see same interface and could access data from other sites.
+Each site manage restrictions locally through groups.
+2 Alternatives during deployment.
+Distributed. Local access rules have priority. Suitable for NGO,
+Centralized. Central rules override local rules. Suitable for e.g. army or organisations with strong hierarchy.
+Benefits.
+Easier managing people in system, as could be done locally.
+Global search that works. As each site provide own results.
+Flexibility. Each site could setup own modules, and it still will work across globe.
+Resilience?
+Reliability. Even if network destroyed, local site could sill be accessible, and let people continue to work.
+
+
+One more example:
+Lets assume there are political parties in each country in europe. They all need communicate, but want to keep their own users and data (documents). They also want to access allowed data from other countries. Now there is just no solution for that.
+But if each party in each country could have own instance, then they could grant access to other parties, while owning data. E.g. person from Germany, could search for "car tax" and it will find documents not only in germany repository, but also from connected repositories across europe. And it will be visible in same UI, on same page.
+System could support 2 types of deployment: centralized (which add additional audit, access override) or decentralized (protected data, access on demand).
+I believe that this could change how companies are operate and collaborate in future, as no central part will be required, and communication well be equal for every member.
+
