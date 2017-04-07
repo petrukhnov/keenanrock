@@ -3,7 +3,7 @@ package konstantin.petrukhnov.keenanrock.chatcore.model;
 import lombok.Data;
 
 /**
- * Represent remote site location for integrating channels, etc.
+ * Represent remote site(station) location for integrating channels, etc.
  * Created by Konstantin Petrukhnov on 2017-03-26.
  */
 @Data
